@@ -9,7 +9,7 @@ import Home from './pages/Home';
 import Servicios from './pages/Servicios';
 import Reservas from './pages/Reservas';
 import Contacto from './pages/Contacto';
-import Club from './pages/club'; 
+import Club from './pages/Club'; 
 
 import ConfirmacionReserva from './components/ConfirmacionReserva';
 import Confirmada from './vista/confirmada';
