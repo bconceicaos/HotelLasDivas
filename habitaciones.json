@@ -1,0 +1,82 @@
+[
+  {
+    "habitacion_id": 1,
+    "nombre": "Habitación Estándar",
+    "precio": 75.00,
+    "disponible": true,
+    "caracteristicas": "2 camas dobles, Área de comedor privado., Cocina completa., Baño principal con bañera de hidromasaje., Servicio de conserjería personalizado.",
+    "personasMin": 1,
+    "personasMax": 4,
+    "suplementoPorPersona": 25.00
+  },
+  {
+    "habitacion_id": 2,
+    "nombre": "Habitación Superior",
+    "precio": 90.00,
+    "disponible": true,
+    "caracteristicas": "1 cama, Cama cómoda., Baño privado con ducha o bañera., Televisión de pantalla plana., Área de trabajo., Acceso a Wi-Fi de alta velocidad.",
+    "personasMin": 1,
+    "personasMax": 3,
+    "suplementoPorPersona": 25.00
+  },
+  {
+    "habitacion_id": 3,
+    "nombre": "Habitaciones Familiares",
+    "precio": 100.00,
+    "disponible": true,
+    "caracteristicas": "2 camas dobles, Vistas panorámicas al entorno natural o a la ciudad., Camas extra grandes., Zona de estar., Minibar., Servicio de habitaciones las 24 horas.",
+    "personasMin": 2,
+    "personasMax": 7,
+    "suplementoPorPersona": 25.00
+  },
+  {
+    "habitacion_id": 4,
+    "nombre": "Suite Junior",
+    "precio": 120.00,
+    "disponible": true,
+    "caracteristicas": "1 cama doble, 1 sofá cama, Camas adicionales o literas., Comodidades para familias, como cunas y tronas., Baño privado.",
+    "personasMin": 2,
+    "personasMax": 7,
+    "suplementoPorPersona": 25.00
+  },
+  {
+    "habitacion_id": 5,
+    "nombre": "Suite Ejecutiva",
+    "precio": 170.00,
+    "disponible": true,
+    "caracteristicas": "2 camas dobles, 1 sofá cama, Área de estar con sofá y sillas., Bañera de hidromasaje en el baño., Televisión por cable., Escritorio de trabajo., Balcón privado con vistas.",
+    "personasMin": 1,
+    "personasMax": 4,
+    "suplementoPorPersona": 25.00
+  },
+  {
+    "habitacion_id": 6,
+    "nombre": "Habitación Temática",
+    "precio": 150.00,
+    "disponible": true,
+    "caracteristicas": "1 cama doble, Área de trabajo con escritorio., Sala de estar con sofá y televisión., Minibar y cafetera., Baño amplio y elegante., Acceso a áreas de negocios y reuniones.",
+    "personasMin": 1,
+    "personasMax": 7,
+    "suplementoPorPersona": 25.00
+  },
+  {
+    "habitacion_id": 7,
+    "nombre": "Habitación Premium",
+    "precio": 200.00,
+    "disponible": true,
+    "caracteristicas": "1 cama doble, 1 sofá cama, Camas adicionales o literas., Comodidades para familias, como cunas y tronas., Baño privado.",
+    "personasMin": 3,
+    "personasMax": 7,
+    "suplementoPorPersona": 25.00
+  },
+  {
+    "habitacion_id": 8,
+    "nombre": "Suite Presidencial",
+    "precio": 200.00,
+    "disponible": true,
+    "caracteristicas": "2 camas dobles, 1 sofá cama, Servicio de mayordomo., Acceso a un salón ejecutivo con desayuno y aperitivos., Baño de mármol., Acceso prioritario al spa.",
+    "personasMin": 2,
+    "personasMax": 7,
+    "suplementoPorPersona": 25.00
+  }
+]
