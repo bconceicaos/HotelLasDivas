@@ -8,7 +8,7 @@ import PublicLayout from './layouts/PublicLayout';
 import Home from './pages/Home';
 import Servicios from './pages/Servicios';
 import Reservas from './pages/Reservas';
-import Contacto from './pages/contacto';
+import Contacto from './pages/Contacto';
 import Club from './pages/club'; 
 
 import ConfirmacionReserva from './components/ConfirmacionReserva';
