@@ -7,7 +7,6 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import helmet from 'helmet';
 import mongoSanitize from 'express-mongo-sanitize';
-import nodemailer from 'nodemailer';
 import http from 'http';
 
 import connectDB from './backend/utils/db.js';
@@ -43,15 +42,6 @@ app.use(helmet({
 }));
 app.use(mongoSanitize());
 
-// Nodemailer (Gmail)
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
 // Rutas
 import authRoutes from './backend/routes/auth.js';
 import protectedRoutes from './backend/routes/protectedRoute.js';
@@ -66,34 +56,13 @@ app.use('/api/users', usersRoutes);
 app.use('/api/habitaciones', habitacionesRoutes);
 app.use('/api/reservas', reservasRoutes);
 
+app.get('/', (req, res) => {
+  res.send('API Hotel Las Divas está corriendo correctamente');
+});
+
 // ruta protegida
 app.get('/api/auth/me', verificarToken, (req, res) => {
   res.json({ user: req.user });
-});
-
-
-// Envío de correo
-app.post('/enviar-email', async (req, res) => {
-  const { nombre, email } = req.body;
-
-  if (!nombre || !email) {
-    return res.status(400).json({ success: false, message: 'Faltan datos.' });
-  }
-
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: email,
-    subject: 'Confirmación de solicitud de información',
-    html: `<p>Hola <strong>${nombre}</strong>, hemos recibido tu solicitud. Bienvenido a TaskPlanner. Nos pondremos en contacto contigo pronto al email <strong>${email}</strong>.</p>`,
-  };
-
-  try {
-    await transporter.sendMail(mailOptions);
-    res.status(200).json({ success: true, message: 'Correo de confirmación enviado correctamente' });
-  } catch (error) {
-    console.error('Error al enviar correo:', error);
-    res.status(500).json({ success: false, message: 'Error al enviar el correo.' });
-  }
 });
 
 
