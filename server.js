@@ -29,10 +29,22 @@ const wss = inicializarWebSocket(backend);    // Inicializar WebSocket con el se
 app.set('wss', wss);
 
 // Middlewares globales
-app.use(cors({ 
-    origin: 'http://localhost:3000', 
-    credentials: true 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://hotel-las-divas-qcv7.vercel.app'
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
 }));
+
 app.use(express.json());
 app.use(cookieParser());
 
