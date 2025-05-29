@@ -31,7 +31,7 @@ app.set('wss', wss);
 // Middlewares globales
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://hotel-las-divas-qcv7.vercel.app'
+  'https://hotellasdivas.onrender.com'
 ];
 
 app.use(cors({
