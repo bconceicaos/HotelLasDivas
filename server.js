@@ -83,4 +83,4 @@ app.use(errorMiddleware);
 
 // Iniciar servidor
 const PORT = process.env.PORT || 5000;
-backend.listen(PORT, () => console.log(`Servidor escuchando en http://localhost:${PORT}`));
+backend.listen(PORT, () => console.log(`Servidor escuchando en el puerto ${PORT}`));
