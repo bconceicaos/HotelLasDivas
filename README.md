@@ -34,6 +34,8 @@ cd Divas-project
 
 npm install
 
+(express, dotenv, cors, axios, cookie-parser, helmet, express-mongo-sanitize , mongoose, jsonwebtoken, bcryptjs, ws, multer, express-validator, bootstrap, react-bootstrap-icons, react-responsive-carousel, react-bootstrap)
+
 3. Crea los archivos de entorno .env y .env.client si no existen, basados en los ejemplos proporcionados (o configúralos según tus variables necesarias):
 
 # .env
