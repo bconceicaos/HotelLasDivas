@@ -36,7 +36,9 @@ npm install
 
 (express, dotenv, cors, axios, cookie-parser, helmet, express-mongo-sanitize , mongoose, jsonwebtoken, bcryptjs, ws, multer, express-validator, bootstrap, react-bootstrap-icons, react-responsive-carousel, react-bootstrap)
 
-3. Crea los archivos de entorno .env y .env.client si no existen, basados en los ejemplos proporcionados (o configúralos según tus variables necesarias):
+3. Añade el archivo 'habitaciones.json' a tu tabla de la bbdd de MongoDB.
+
+4. Crea los archivos de entorno .env y .env.client si no existen, basados en los ejemplos proporcionados (o configúralos según tus variables necesarias):
 
 # .env
 PORT=5000  # Puerto para el backend 
